@@ -1,0 +1,45 @@
+.home {
+  height: 100%;
+  position: relative;
+}
+
+.portrait-block {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.portrait {
+  margin-top: 10%;
+
+  :global {
+    animation: increase-portrait 20s var(--insert-timing-function);
+  }
+}
+
+.portrait-hover-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--black-rgb), 0.5);
+  :global {
+    animation: decrease-opacity 20s var(--insert-timing-function);
+  }
+}
+
+.typed-block {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .typed-block {
+    font-size: 3rem;
+  }
+}

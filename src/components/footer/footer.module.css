@@ -1,0 +1,8 @@
+.mail {
+  transition: 0.2s;
+  color: var(--c-gray);
+}
+
+.mail:hover {
+  color: var(--c-white);
+}

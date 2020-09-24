@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2017",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+  "include": ["src/**/*", "@types/*.d.ts"],
+  "exclude": ["node_modules", "public", "**/*.spec.ts"]
+}

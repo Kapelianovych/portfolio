@@ -1,0 +1,25 @@
+{
+  "short_name": "Es App",
+  "name": "Edelweiss application",
+  "lang": "en",
+  "description": "App created by edelweiss-cli",
+  "start_url": "__PUBLIC_PREFIX_PATH__/",
+  "background_color": "#ffffff",
+  "theme_color": "#e76f51",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "__PUBLIC_PREFIX_PATH__/icons/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "__PUBLIC_PREFIX_PATH__/icons/pwa-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "prefer_related_applications": false
+}

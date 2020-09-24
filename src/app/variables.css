@@ -1,0 +1,8 @@
+:root {
+  --black-rgb: 17, 17, 17;
+
+  --c-white: #f1f1f1;
+  --c-gray: #8f8f8f;
+
+  --insert-timing-function: cubic-bezier(0.14, 0.26, 0.45, 1.02);
+}
