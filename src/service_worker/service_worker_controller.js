@@ -3,7 +3,7 @@ export function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker
-        .register('service_worker.js')
+        .register('__PUBLIC_PREFIX_PATH__/service_worker.js')
         .then((registration) =>
           console.log(
             'Service worker is registered. Scope is ' + registration.scope
