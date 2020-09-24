@@ -1,1 +1,1 @@
-Go to <website>
+👉 <https://yevhenkap.github.io/portfolio/>
