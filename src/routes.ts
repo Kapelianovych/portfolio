@@ -6,7 +6,7 @@ import { TypedElementId } from './pages/home/home';
 Router.container = '#app';
 Router.add([
   {
-    path: '/',
+    path: '__PUBLIC_PREFIX_PATH__/',
     view() {
       return app('home');
     },
@@ -21,7 +21,7 @@ Router.add([
     },
   },
   {
-    path: '/about',
+    path: '__PUBLIC_PREFIX_PATH__/about',
     view() {
       return app('about');
     },
