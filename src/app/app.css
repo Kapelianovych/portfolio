@@ -52,6 +52,4 @@ footer {
   font-size: 0.8rem;
   color: var(--c-gray);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }

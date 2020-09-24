@@ -9,18 +9,12 @@ export function portfolioModal() {
       class="${state.isPortfolioVisible ? style.visible : ''} ${style[
         'portfolio-modal'
       ]}"
-      @transitionend=${(event: Event) => {
-        (event.target as HTMLElement).classList.toggle(style.background);
-      }}
     >
       <h2>Portfolio</h2>
       <div class=${style.carousel}>
-        <a
-          href="https://github.com/YevhenKap/edelweiss"
-          class=${style['portfolio-item']}
-        >
+        <a href="https://yevhenkap.github.io" class=${style['portfolio-item']}>
           <img src="${image}" alt="Edelweiss website" />
-          <p>Edelweiss website (WIP)</p>
+          <p>Edelweiss website</p>
         </a>
       </div>
     </aside>

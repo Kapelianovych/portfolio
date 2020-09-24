@@ -19,11 +19,6 @@
   text-align: center;
 }
 
-.portfolio-modal.background {
-  background: rgb(var(--black-rgb), 0.5);
-  box-shadow: 0 0 4px 4px rgba(var(--black-rgb), 0.5);
-}
-
 .portfolio-modal.visible {
   transform: translate(0, 0);
 }
@@ -38,6 +33,7 @@
   max-width: 350px;
   display: block;
   cursor: pointer;
+  background: rgba(var(--black-rgb), 0.9);
 
   &:hover {
     scale: 1.05;
