@@ -96,6 +96,7 @@ export default [
         'process.env.NODE_ENV': JSON.stringify(
           process.env.NODE_ENV || 'production'
         ),
+        __PUBLIC_PREFIX_PATH__,
       }),
       injectManifest({
         globDirectory: BUILD_DIR_NAME,
