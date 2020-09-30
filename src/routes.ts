@@ -3,10 +3,14 @@ import Typed from './typedJs/typed';
 import { Router } from '@prostory/edelweiss';
 import { TypedElementId } from './pages/home/home';
 
-Router.container = '#app';
+Router.configure({
+  basePrefix: '__PUBLIC_PREFIX_PATH__',
+  baseContainer: '#app',
+});
+
 Router.add([
   {
-    path: '__PUBLIC_PREFIX_PATH__/',
+    path: '/',
     view() {
       return app('home');
     },
@@ -21,7 +25,7 @@ Router.add([
     },
   },
   {
-    path: '__PUBLIC_PREFIX_PATH__/about',
+    path: '/about',
     view() {
       return app('about');
     },
