@@ -2,10 +2,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.3s;
+  transition: 0.7s ease-out;
   padding: 1em;
   border-radius: 6px;
-  transform: translate(-100%, 0);
+  transform: translate(-5%, 0);
+  visibility: hidden;
+  opacity: 0;
   min-width: 100%;
   height: 100%;
   display: flex;
@@ -21,6 +23,8 @@
 
 .portfolio-modal.visible {
   transform: translate(0, 0);
+  visibility: visible;
+  opacity: 1;
 }
 
 .carousel {

@@ -3,7 +3,7 @@
   "name": "Edelweiss application",
   "lang": "en",
   "description": "App created by edelweiss-cli",
-  "start_url": "/portfolio/",
+  "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#e76f51",
   "dir": "ltr",
@@ -11,12 +11,12 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/portfolio/icons/pwa-512x512.png",
+      "src": "/icons/pwa-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/portfolio/icons/pwa-192x192.png",
+      "src": "/icons/pwa-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }

@@ -1,12 +1,18 @@
-import { registerRoute } from 'workbox-routing';
-import { precacheAndRoute } from 'workbox-precaching';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { setCacheNameDetails } from 'workbox-core';
+import { createHandlerBoundToURL, precacheAndRoute } from 'workbox-precaching';
+import {
+  registerRoute,
+  NavigationRoute,
+  setDefaultHandler,
+} from 'workbox-routing';
 import {
   CacheFirst,
   NetworkFirst,
   StaleWhileRevalidate,
 } from 'workbox-strategies';
+
+const FALLBACK_HTML = '/index.html';
 
 setCacheNameDetails({
   // Change as you want
@@ -70,3 +76,7 @@ registerRoute(
     cacheName: 'manifest-cache',
   })
 );
+
+setDefaultHandler(new StaleWhileRevalidate());
+
+registerRoute(new NavigationRoute(createHandlerBoundToURL(FALLBACK_HTML)));
