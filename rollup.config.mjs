@@ -72,6 +72,7 @@ export default [
               'public/robots.txt',
               'public/icons',
               'public/styles',
+              'public/images',
             ],
             dest: BUILD_DIR_NAME,
           },

@@ -2,18 +2,3 @@
   display: flex;
   flex: 1;
 }
-
-.mail {
-  transition: 0.2s;
-  color: var(--c-gray);
-}
-
-.mail:hover {
-  color: var(--c-white);
-}
-
-@media (min-width: 767px) {
-  .left-col {
-    justify-content: center;
-  }
-}

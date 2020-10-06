@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import 'variables.css';
-@import 'animations.css';
 
 * {
   box-sizing: border-box;
@@ -32,8 +31,8 @@ button {
 #app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background: rgb(var(--black-rgb));
+  min-height: 100vh;
+  background: url('/images/back.png') center/cover;
 }
 
 header {
@@ -50,6 +49,6 @@ main {
 footer {
   padding: 1em;
   font-size: 0.8rem;
-  color: var(--c-gray);
   display: flex;
+  mix-blend-mode: difference;
 }

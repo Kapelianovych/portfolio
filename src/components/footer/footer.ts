@@ -6,6 +6,6 @@ export default function Footer() {
     <div class=${style['left-col']}>
       <span>Made by Kapelianovych Yevhen</span>
     </div>
-    <a class=${style.mail} href="mailto:kapelianovych.y.v@gmail.com">Mail me</a>
+    <a href="mailto:kapelianovych.y.v@gmail.com">Mail me</a>
   </footer>`;
 }

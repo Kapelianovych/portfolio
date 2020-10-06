@@ -1,3 +1,6 @@
 import { createState } from '@prostory/edelweiss';
 
-export const state = createState({ isPortfolioVisible: false });
+export const state = createState({
+  isPortfolioVisible: false,
+  isWelcomeTextVisible: false,
+});
