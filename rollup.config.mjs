@@ -5,6 +5,7 @@ import nested from 'postcss-nested';
 import cleaner from 'rollup-plugin-cleaner';
 import postcss from 'rollup-plugin-postcss';
 import replace from '@rollup/plugin-replace';
+import replaceCss from 'postcss-replace';
 import typescript from '@rollup/plugin-typescript';
 import inlineImport from 'postcss-import';
 import autoprefixer from 'autoprefixer';
@@ -49,7 +50,16 @@ export default [
         publicPath: `${__PUBLIC_PREFIX_PATH__}/${EMIT_DIR_NAME}/images/`,
       }),
       postcss({
-        plugins: [inlineImport(), nested(), autoprefixer()],
+        plugins: [
+          inlineImport(),
+          nested(),
+          replaceCss({
+            data: {
+              __PUBLIC_PREFIX_PATH__,
+            },
+          }),
+          autoprefixer(),
+        ],
         extract: true,
         minimize: true,
       }),
