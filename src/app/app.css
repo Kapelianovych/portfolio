@@ -32,7 +32,7 @@ button {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: url('/images/back.png') center/cover;
+  background: url('__PUBLIC_PREFIX_PATH__/images/back.png') center/cover;
 }
 
 header {
